@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'rohit:rohit_mvn' 
+            image 'patekar1993/rohit:latest' 
             args '-v /root/.m2:/root/.m2' 
         }
     }
