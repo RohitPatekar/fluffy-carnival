@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- ==============================================================
+
+	     EXAMPLE ACTIVITY  - MENU FILE
+			     
+	==============================================================
+
+  !!! See also webApplication/menu/RootMenu.xml comments !!!
+  
+-->
+<menu xmlns:cinclude="http://apache.org/cocoon/include/1.0" name="menu.example.levelA">
+	<menu name="menu.example.levelB">
+		<!-- An introduction page -->
+		<!-- WARNING: this link intentionally uncommented but will only work -->
+		<!-- if the activity/page exist in a model project and was generated with -->
+		<!-- Design Studio -->
+		<menu name="menu.example.levelC.1" uri="/activity/example/Introduction" />
+		
+		<!-- Uncomment this section to enable the menu with an activity url -->
+		<!-- made with Design Studio (aka Page Designer)-->
+		<!-- A page must be created in a models projectd before with a full path -->
+		<!-- of page/Default/activity/example/HelloWorldModelsPage -->
+		<!-- A Hello World page constructed with Design studio -->
+		<!-- <menu name="menu.example.levelC.2" uri="/activity/example/HelloWorldModelsPage" /> -->
+		
+		<!-- Uncomment this section to enable the menu with a pageflow url -->
+		<!-- A pageflow must created in a models project before with a target name -->
+		<!-- example-pageflow-helloworld -->
+		<!-- A pageflow constructed with Design Studio but referencing models and processes in a non design studio project -->
+		<!-- <menu name="menu.example.levelC.3" uri="/activity/example/pageflow/example-pageflow-helloworld/Helloworld?flow-action=init" /> -->
+	</menu>
+</menu>

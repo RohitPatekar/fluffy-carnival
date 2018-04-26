@@ -1,0 +1,15 @@
+<!--
+===============================================================================
+                        SITEMAP PATCH  			
+===============================================================================
+  
+  Block Name:           PSP-LOGO-CUSTO-MANUAL
+===============================================================================
+-->
+
+<patches>
+	<patch xpath="/sitemap/components/actions/action/valid-keys">
+		<!-- New key used in the test-models pageflow "Helloworld" -->
+		<valid-key name="testMessage" scope="user" />
+	</patch>
+</patches>

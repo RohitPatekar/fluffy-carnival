@@ -1,0 +1,60 @@
+<!--
+	============================================================= 
+	PSP-LOGO ACTIVTY SUB-SITEMAP
+	=============================================================
+	Refer to Cocoon Documentation for the declaration of elements
+	in the sub sitemap
+-->
+
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+
+	<!-- =========================== COMPONENTS ================================  -->
+	<!-- Add the Cocoon component under the respective comment -->
+	<!-- Use of Cocoon actions is not recommended. To avoid as much as possible, prefer the
+		 use of the pageflow processes
+	-->
+	<!-- 
+	<map:components>
+	 -->
+	 	<!-- ===== Generators    ===== -->
+	 	<!-- ===== Readers       ===== -->
+	 	<!-- ===== Transformers  ===== -->
+	 	<!-- ===== Serializers   ===== -->
+	 	<!-- ===== Matchers      ===== -->
+	 	<!-- ===== Actions       ===== -->
+	 	
+	 <!-- 
+	</map:components>
+	 -->
+	
+	<!-- =========================== ACTION SETS ================================  -->
+	<!-- Not Recommended to declare action sets unless it cannot be done otherwise -->
+	
+	<!-- =========================== VIEWS ======================================  -->
+	
+	<!-- =========================== PIPELINES ==================================  -->
+	<map:pipelines>
+
+		<!-- ========== PUBLIC PIPELINE ========== -->
+		<map:pipeline internal-only="false">
+
+			<!-- Stateless behavior URLs for the example URLs.                                       -->
+			<!-- Do not remove if src/main/resources/oams-profiles/Default/activity/example present  -->
+			<!-- Change the pattern example to the folder name under activity to map the redirect    -->
+			<!-- to the pages under the folder.                                                      -->
+			<!-- Example:                                                                            -->
+			<!--      pattern="activity/myComponent" if folder path is ../activity/myComponent       -->
+			<!-- 	  uri attribute in map:redirect-to node to change into:                          -->
+			<!--  	  <map:redirect-to uri="cocoon://page/myComponent/{1}"/>                         -->
+			<map:match pattern="activity/example/**">
+				<map:redirect-to uri="cocoon://page/example/{1}"/>
+			</map:match>
+			
+		</map:pipeline>
+		
+	</map:pipelines>
+
+
+	<!-- =========================== ERROR HANDLING ============================  -->
+
+</map:sitemap>

@@ -1,0 +1,31 @@
+<!-- ==============================================================
+
+	     psp-logo-custo-manual wui block declaration
+			     
+	==============================================================
+
+  !!! * Change the weight (1-10) to position correctly the wui block  !!! 
+  !!! menu appearance in the level A navigation.                      !!!
+  !!! weight="10" assigned by default for custo wuiblocks to give	  !!!
+  !!! the highest priority											  !!!
+  !!! * Comment the <activity/> node of the <exposes> child nodes 	  !!!
+  !!! to remove the display of the level A menu in the main screen    !!!
+  !!! * Comment the <nls-messages/> node to disable the translations  !!!
+  !!! of the wui block												  !!!  
+-->
+
+<block xmlns="http://www.odcgroup.com/wui-block-descriptor"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.odcgroup.com/wui-block-descriptor wui-block-descriptor.xsd"
+       id="http://www.odcgroup.com/psp-logo-custo-manual/1.0.0" weight="10"
+       deploy="true">
+	
+	<name>psp-logo-custo-manual</name>
+	<description>The psp-logo manual Block</description>
+	
+	<exposes>
+		<activity name="example" root-package="com.odcgroup.wui.activity.example" resource-dir="activity/example" />
+		<nls-messages messages-dir="psp-logo-custo-manual"/>
+	</exposes>
+	
+</block>

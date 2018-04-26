@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.odcgroup.odp</groupId>
+        <artifactId>ocs-core</artifactId>
+        <version>23.0.0</version>
+    </parent>
+
+    <groupId>com.odcgroup.custo</groupId>
+	<artifactId>psp-logo-custo-manual</artifactId>
+	<packaging>wuiblock</packaging>
+
+	<build>
+		<outputDirectory>classes</outputDirectory>
+		<plugins>
+			<plugin>
+				<groupId>com.odcgroup.maven.plugin</groupId>
+				<artifactId>maven-wuiblock-plugin</artifactId>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.odcgroup.ocs.wui</groupId>
+			<artifactId>wui-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!--
+		<dependency>
+		    <groupId>${project.groupId}</groupId>
+		    <artifactId>psp-logo-custo-lib</artifactId>
+		    <version>${project.version}</version>
+		</dependency>
+		-->
+	</dependencies>
+	
+</project>
